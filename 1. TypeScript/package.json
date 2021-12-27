@@ -1,0 +1,14 @@
+{
+  "name": "1.-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pokemon.js",
+  "scripts": {
+    "pokemon": "tsc pokemon-ts.ts && node pokemon-ts.js"
+  },
+  "author": "Bart Duisters (Code Coaching)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

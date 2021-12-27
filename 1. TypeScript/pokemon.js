@@ -1,4 +1,4 @@
-class Pokemon {
+class PokemonJS {
   constructor(name, type, hp, attack, defense, speed) {
     this.name = name;
     this.type = type;
@@ -44,10 +44,10 @@ const battle = (pokemon1, pokemon2) => {
 
 const didPokemonFaint = (pokemon) => pokemon.hp <= 0;
 
-const bulbasaur = new Pokemon("Bulbasaur", "Grass", 45, 49, 49, 45);
-const charmander = new Pokemon("Charmander", "Fire", 39, 52, 43, 65);
-const squirtle = new Pokemon("Squirtle", "Water", 44, 48, 65, 43);
-const pikachu = new Pokemon("Pikachu", "Electric", 41, 65, 40, 90);
+const bulbasaur = new PokemonJS("Bulbasaur", "Grass", 45, 49, 49, 45);
+const charmander = new PokemonJS("Charmander", "Fire", 39, 52, 43, 65);
+const squirtle = new PokemonJS("Squirtle", "Water", 44, 48, 65, 43);
+const pikachu = new PokemonJS("Pikachu", "Electric", 41, 65, 40, 90);
 
 battle(bulbasaur, charmander);
 // battle(charmander, squirtle);
