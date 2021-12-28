@@ -1,8 +1,1 @@
-export interface Todo {
-  id: number;
-  content: string;
-}
-
-export interface Meta {
-  totalCount: number;
-}
+// Place any necessary models in this file.
