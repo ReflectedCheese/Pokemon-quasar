@@ -6,7 +6,7 @@
 
         <q-toolbar-title> Code Coaching - Pokémon Quasar </q-toolbar-title>
 
-        <div>2. Layouts & Pages</div>
+        <div>2. Layouts - Pages - Routing</div>
       </q-toolbar>
     </q-header>
 
