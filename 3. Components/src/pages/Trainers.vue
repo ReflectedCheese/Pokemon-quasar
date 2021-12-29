@@ -6,7 +6,7 @@
         <div>
           <router-link to="/trainers/1">
             <q-btn flat dense round icon="person" />
-            <span>Ash Catchum</span>
+            <span>Ash Ketchum</span>
           </router-link>
         </div>
         <div>
