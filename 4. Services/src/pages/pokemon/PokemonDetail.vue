@@ -94,7 +94,6 @@ export default defineComponent({
       () => route.params.id,
       (newId) => {
         const pokemon = allPokemon.value.find((pokemon) => pokemon.id === +newId);
-        console.log('poke', pokemon);
         selectedPokemon.value = pokemon;
       },
       { immediate: true }
