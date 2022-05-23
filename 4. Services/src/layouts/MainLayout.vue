@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import EssentialLink from 'components/EssentialLink.vue';
+import EssentialLink from '../components/EssentialLink.vue';
 import { useRoute } from 'vue-router';
 
 const linksList = [

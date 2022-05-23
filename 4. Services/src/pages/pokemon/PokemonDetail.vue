@@ -24,71 +24,15 @@
 
 <script lang="ts">
 import { defineComponent, Ref, ref, watch } from 'vue';
-import { Pokemon } from 'components/models';
+import { Pokemon } from 'src/components/models';
 import { useRoute } from 'vue-router';
-import { usePokemonService } from 'src/services/pokemon.service';
+import { usePokemonService } from 'src/services/pokemonService';
 
 export default defineComponent({
   setup() {
     const route = useRoute();
-    const { getTypeColor } = usePokemonService();
     const selectedPokemon: Ref<Pokemon | undefined> = ref(undefined);
-    const allPokemon: Ref<Array<Pokemon>> = ref([
-      {
-        id: 1,
-        name: 'Bulbasaur',
-        types: ['grass'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
-      },
-      {
-        id: 2,
-        name: 'Ivysaur',
-        types: ['grass'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
-      },
-      {
-        id: 3,
-        name: 'Venusaur',
-        types: ['grass'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
-      },
-      {
-        id: 4,
-        name: 'Charmander',
-        types: ['fire'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
-      },
-      {
-        id: 5,
-        name: 'Charmeleon',
-        types: ['fire'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
-      },
-      {
-        id: 6,
-        name: 'Charizard',
-        types: ['fire', 'flying'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
-      },
-      {
-        id: 7,
-        name: 'Squirtle',
-        types: ['water'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
-      },
-      {
-        id: 8,
-        name: 'Wartortle',
-        types: ['water'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
-      },
-      {
-        id: 9,
-        name: 'Blastoise',
-        types: ['water'],
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png',
-      },
-    ]);
+    const { allPokemon, getTypeColor } = usePokemonService();
 
     watch(
       () => route.params.id,

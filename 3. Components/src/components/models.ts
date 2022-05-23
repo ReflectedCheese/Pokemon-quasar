@@ -1,1 +1,6 @@
-// Place any necessary models in this file.
+export interface Trainer {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+}
