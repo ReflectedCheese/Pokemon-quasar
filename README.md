@@ -1,3 +1,5 @@
+# Dit is mijn finale versie - deze mag nagekeken worden voor punten! :P
+
 # Pokémon Quasar - English
 
 This repository contains exercises to test the basic knowledge about Quasar / Vue concepts.
